@@ -30,6 +30,7 @@ import {BooksService} from './components/book-cart/product-list/product-list.ser
     HttpClientModule,
     AppRoutingModule
   ],
+
   providers: [BooksService],
   bootstrap: [AppComponent]
 })

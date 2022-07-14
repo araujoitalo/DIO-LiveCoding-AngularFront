@@ -17,12 +17,12 @@ export const books: Book[] = [
 
 export class BooksService {
 
-  private url = 'https://localhost:44382/api/bookstore';  // URL to web api
+  private url = 'https://localhost:5001/api/bookstore';  // URL to web api
 
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
   }
-    
+
    constructor( private http: HttpClient){}
 
 
@@ -33,7 +33,7 @@ export class BooksService {
     getBooks() {
       return this.http.get(this.url)
 
-  
+
     }
 
 }
