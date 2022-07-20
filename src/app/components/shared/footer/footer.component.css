@@ -1,9 +1,9 @@
 .footer {
   position: fixed;
   bottom: 0;
-
   display: flex;
   justify-content: flex-end;
+  background-color: #D5D5D5;
 }
 
 .footer  > span {
