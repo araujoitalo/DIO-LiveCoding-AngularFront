@@ -14,6 +14,12 @@ import { ProductItemComponent } from './components/book-cart/product-list/produc
 import { HttpClientModule } from '@angular/common/http';
 import {BooksService} from './components/book-cart/product-list/product-list.service';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatToolbarModule } from '@angular/material/toolbar'
+import { MatIconModule } from '@angular/material/icon';
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +34,10 @@ import {BooksService} from './components/book-cart/product-list/product-list.ser
   imports: [
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatIconModule
   ],
 
   providers: [BooksService],
